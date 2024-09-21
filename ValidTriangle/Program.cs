@@ -1,18 +1,8 @@
-﻿int firstSide = int.Parse(Console.ReadLine());
-int secondSide = int.Parse(Console.ReadLine());
-int thirdSide = int.Parse(Console.ReadLine());
+int a = int.Parse(Console.ReadLine());
+int b = int.Parse(Console.ReadLine());
+int c = int.Parse(Console.ReadLine());
 
-//i need to add one more thing to work, mby tomorrow
-
-if (firstSide == secondSide + thirdSide)
-{
-    Console.WriteLine("Valid Triangle");
-}
-else if (secondSide == firstSide + thirdSide)
-{
-    Console.WriteLine("Valid Triangle");
-}
-else if (thirdSide == secondSide + firstSide)
+if (a < b + c && b < a + c && c < a + b)
 {
     Console.WriteLine("Valid Triangle");
 }
